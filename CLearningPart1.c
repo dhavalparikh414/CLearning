@@ -26,6 +26,10 @@ int main()
     Compiler -- ex: a.s
     Assembler -- ex: a.o
     Linker
+    
+    To compile your source file do gcc a.c 
+    and the output will be a.out.
+
     Executable file -- ex: a.out is the default executable file name of gcc compiler.
  
  ------------------------------------------------*/
@@ -66,9 +70,48 @@ int main()
 
    gcc -O f1.exe f1.c --> rename a file.
 
-
-
 */
+
+/* An undefined reference compiler error is raised when used wrong words */
+/* The first function called by compiler is main() */
+
+/*
+--------------------------------------------
+Name of variables in C cannot start with a number
+ex: int 1ac  is not a variable name
+
+---------------------------------------------
+
+There are 3 data types 
+1) Built in ( int , char, float , double) 
+2) Derived 
+3) user defined
+*/
+
+/* Program to know the size of built in data types */
+printf("size of int =%lu\n", sizeof(int)); // %lu is the format specifier for long unsigned int, as sizeof returns a long unsigned int we have to use lu
+printf("size of char =%lu\n", sizeof(char));
+printf("size of float =%lu\n", sizeof(float));
+printf("size of double =%lu\n", sizeof(double));
+
+/* --------------------- format specifiers 
+
+%u -- unsigned int
+%d -- base 10
+%i
+%x -- hexa decimal format
+%o -- octal format
+
+by default every int is a signed int, for +ve only values use  unsigned int
+
+%c -- char
+%f, %e -- float
+%lf , %le -- double
+
+------------------------------- */
+
+
+
 
  return 0;
 
