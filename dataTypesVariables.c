@@ -21,5 +21,12 @@ int main()
     scanf("%c", &ch1);
     printf("The entered character is %c and its ascii value is %d\n", ch1, ch1);
 
+    /* lvalue in an expression should always be a proper memory
+    ex : int a;
+         10 = a; // this will throw an lvalue error 
+        lvalue cannot be an address.
+&ch=10, if valid, would set the address of ch to 10. The address of variables (and other addressable values) is not under user control in C so not an l-value.
+                 */
+
     return 0;
 }
